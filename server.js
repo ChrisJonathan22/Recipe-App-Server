@@ -30,7 +30,7 @@ const { connect } = require('./database');
 // Import model/ collection
 const { recipes } = require('./database'); 
 // Set the port number to 5000
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Handling the database errors
 connect.on('error', console.error.bind(console, 'connection error:'));
