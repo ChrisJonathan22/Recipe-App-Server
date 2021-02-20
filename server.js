@@ -16,14 +16,16 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json({limit: '15mb', extended: true}));
 
 app.use(methodOverride('_method'));
+app.use(cors());
+
 app.use((req, res, next) => { //allow cross origin requests
         res.setHeader("Access-Control-Allow-Methods", "POST, PUT, OPTIONS, DELETE, GET");
-        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Origin", "https://chrisjonathan.co.uk");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         res.header("Access-Control-Allow-Credentials", true);
         next();
 });
-app.use(cors());
+
 
 // Import database
 const { connect } = require('./database');
