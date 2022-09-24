@@ -4,6 +4,7 @@
   "description": "Basic Recipe App",
   "main": "server.js",
   "scripts": {
+    "run": "node server.js",
     "start": "node Server/server.js",
     "Server": "nodemon Server/server.js",
     "Client": "cd client && npm start"
