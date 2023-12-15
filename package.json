@@ -1,24 +1,22 @@
 {
-  "name": "recipe-app",
+  "name": "recipe-app-server",
   "version": "1.0.0",
-  "description": "Basic Recipe App",
+  "description": "Basic Recipe App Server",
   "main": "server.js",
   "scripts": {
     "run": "node server.js",
-    "start": "node Server/server.js",
-    "Server": "nodemon Server/server.js",
-    "Client": "cd client && npm start"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisJonathan22/Recipe-App.git"
+    "url": "git+https://github.com/ChrisJonathan22/Recipe-App-Server.git"
   },
   "author": "Chris Jonathan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ChrisJonathan22/Recipe-App/issues"
+    "url": "https://github.com/ChrisJonathan22/Recipe-App-Server/issues"
   },
-  "homepage": "https://github.com/ChrisJonathan22/Recipe-App#readme",
+  "homepage": "https://github.com/ChrisJonathan22/Recipe-App-Server#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.18.3",
@@ -29,12 +27,14 @@
     "express": "^4.16.4",
     "gridfs-stream": "^1.1.1",
     "method-override": "^3.0.0",
-    "mongoose": "^5.3.12",
+    "mongoose": "^8.0.2",
     "multer": "^1.4.1",
     "multer-gridfs-storage": "^3.2.3",
-    "node-sass": "^4.13.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
